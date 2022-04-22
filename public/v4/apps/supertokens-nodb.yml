@@ -40,7 +40,6 @@ caproverOneClickApp:
           description: 'Postgres host. This could be Caprover postgres using srv-captain--'
           validRegex: /.{1,}/
 
-
     instructions:
         start: |-
             SuperTokens is an open source authentication solution.

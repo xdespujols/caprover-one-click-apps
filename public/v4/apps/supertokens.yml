@@ -52,7 +52,6 @@ caproverOneClickApp:
           description: ''
           validRegex: /.{1,}/
 
-
     instructions:
         start: |-
             SuperTokens is an open source authentication solution.
