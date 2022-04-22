@@ -4,12 +4,14 @@ specifiers:
   fs-extra: ^9.0.1
   gh-pages: ^3.1.0
   prettier: ^2.0.5
+  rimraf: ^3.0.2
   yaml: ^1.10.0
 
 dependencies:
   fs-extra: 9.1.0
   gh-pages: 3.2.3
   prettier: 2.6.2
+  rimraf: 3.0.2
   yaml: 1.10.2
 
 packages:
@@ -280,6 +282,13 @@ packages:
     resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: false
+
+  /rimraf/3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
+    dependencies:
+      glob: 7.2.0
     dev: false
 
   /semver/6.3.0:
