@@ -1,1 +1,3 @@
-# Jordan One click deploy used for LTS and others
+# Jordan One Click deploy used for LTS and others
+
+[![Publish One Click Apps](https://github.com/Jordan-Hall/caprover-one-click-apps/actions/workflows/deploy.yml/badge.svg)](https://github.com/Jordan-Hall/caprover-one-click-apps/actions/workflows/deploy.yml)[![Validate One Click Apps](https://github.com/Jordan-Hall/caprover-one-click-apps/actions/workflows/validate_apps.yml/badge.svg)](https://github.com/Jordan-Hall/caprover-one-click-apps/actions/workflows/validate_apps.yml)
