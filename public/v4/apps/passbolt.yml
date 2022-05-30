@@ -26,7 +26,8 @@ services:
             EMAIL_TRANSPORT_DEFAULT_PASSWORD: $$cap_email_pass
             EMAIL_TRANSPORT_DEFAULT_TLS: $$cap_email_tls
         volumes:
-            - $$cap_appname-gpg:/var/www/passbolt/config/gpg
+            - $$cap_appname-gpg:/etc/passbolt/gpg
+            - $$cap_appname-jwt:/etc/passbolt/jwt
             - $$cap_appname-images:/var/www/passbolt/webroot/img/public
 caproverOneClickApp:
     variables:
@@ -41,7 +42,7 @@ caproverOneClickApp:
           defaultValue: password
         - id: $$cap_pb_version
           label: Passbolt Version
-          defaultValue: 2.12.1-debian
+          defaultValue: latest-ce
           description: Check out their Docker page for the valid tags https://hub.docker.com/r/passbolt/passbolt/tags/
         - id: $$cap_url
           label: Passbolt URL
