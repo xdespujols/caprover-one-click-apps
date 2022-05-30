@@ -77,11 +77,10 @@ caproverOneClickApp:
 
             Note: Once the container is running create your first admin user running the following command in the terminal:
 
+            $ docker exec <containerID> su -m -c '/usr/share/php/passbolt/bin/cake passbolt register_user -u your@email.com -f yourname -l surname -r admin' -s /bin/sh www-data
 
-            $ docker exec <containerID> su -m -c '/var/www/passbolt/bin/cake passbolt register_user -u your@email.com -f yourname -l surname -r admin' -s /bin/sh www-data
 
-
-            This registration command will return a single use url required to continue the web browser setup and finish the registration. Your passbolt instance should be available browsing https://yourdomain.com
+            This registration command will return a single use url required to continue the web browser setup and finish the registration. Your passbolt instance should be available browsing $$cap_url
     displayName: Passbolt
     isOfficial: true
     description: Passbolt is a free and open source password manager that allows team members to store and share credentials securely.
