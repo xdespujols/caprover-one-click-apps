@@ -1,0 +1,29 @@
+{
+  "captainVersion": "2",
+  "documentation": "Based on https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-18-04",
+  "displayName": "Docker Container Registry",
+  "dockerCompose": {
+    "version": "3.3",
+    "services": {
+      "$$cap_appname": {
+        "image": "registry:2",
+        "containerHttpPort": "5000",
+        "restart": "always",
+        "volumes": [
+          "$$cap_appname-data:/data",
+          "$$cap_appname-auth:/auth"
+        ],
+        "environment": {
+          "REGISTRY_AUTH": "htpasswd",
+          "REGISTRY_AUTH_HTPASSWD_REALM": "Registry",
+          "REGISTRY_AUTH_HTPASSWD_PATH": "/auth/registry.password",
+          "REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY": "/data"
+        }
+      }
+    }
+  },
+  "instructions": {
+    "start": "",
+    "stop": ""
+  }
+}
