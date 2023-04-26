@@ -1,3 +1,4 @@
+---
 captainVersion: 4
 services:
   $$cap_appname:
@@ -27,4 +28,9 @@ caproverOneClickApp:
   instructions:
     start: This will deploy a Kali Linux container with GUI and remote desktop
       support.
-    end: Kali Linux is deployed and accessible via R
+    end: Kali Linux is deployed and accessible via RDP. Use a Remote Desktop client
+      to connect using the IP address/domain name and the RDP port specified
+      during deployment.
+  displayName: Kali Linux with GUI
+  isOfficial: false
+  description: Kali Linux container with GUI and remote desktop support.
