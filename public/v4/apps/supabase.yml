@@ -10,7 +10,7 @@ services:
             POSTGRES_USER: $$cap_postgres_user
             POSTGRES_PASSWORD: $$cap_postgres_password
 
-   $$cap_appname-realtime:
+    $$cap_appname-realtime:
         image: supabase/realtime:latest
         restart: always
         environment:
