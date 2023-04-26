@@ -23,7 +23,7 @@ services:
     $$cap_appname-kong:
         image: kong:$$cap_kong_version
         volumes:
-            - $$cap_appname-kong-config:/var/lib/kong:ro
+            - $$cap_appname-kong-config:/var/lib/kong
         restart: unless-stopped
         ports:
             - $$cap_kong_https_port:8443
