@@ -12,8 +12,7 @@ services:
       notExposeAsWebApp: "true"
       dockerfileLines:
         - FROM kalilinux/kali-rolling
-        - RUN apt-get update && apt-get install -y kali-linux-default
-          kali-desktop-xfce xrdp
+        - RUN apt-get update && apt-get install -y xrdp
         - RUN apt update && apt -y install kali-linux-large
         - RUN echo "xfce4-session" > /etc/skel/.xsession
         - RUN service xrdp start
