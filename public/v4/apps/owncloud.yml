@@ -14,12 +14,12 @@ services:
         OWNCLOUD_DB_NAME: owncloud
         OWNCLOUD_DB_USERNAME: owncloud
         OWNCLOUD_DB_PASSWORD: owncloud
-        OWNCLOUD_DB_HOST: $$cap_appname-mariadb
+        OWNCLOUD_DB_HOST: srv-captain--$$cap_appname-mariadb
         OWNCLOUD_ADMIN_USERNAME: $$cap_admin_password
         OWNCLOUD_ADMIN_PASSWORD: $$cap_admin_username
         OWNCLOUD_MYSQL_UTF8MB4: true
         OWNCLOUD_REDIS_ENABLED: true
-        OWNCLOUD_REDIS_HOST: $$cap_appname-redis
+        OWNCLOUD_REDIS_HOST: srv-captain--$$cap_appname-redis
     volumes:
       - files:/mnt/data
   $$cap_appname-mariadb:
