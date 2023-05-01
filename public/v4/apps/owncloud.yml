@@ -1,5 +1,4 @@
-version: '3.3'
-
+captainVersion: 4
 services:
   owncloud:
     image: owncloud/server:${OWNCLOUD_VERSION}
@@ -76,3 +75,9 @@ caproverOneClickApp:
       label: HTTP Port
       defaultValue: '8080'
       description: 'The port for the OwnCloud server to listen on.'
+  instructions:
+        start: Deploying Owncloud...
+        end: Owncloud has been deployed! Check the logs for more information.
+    displayName: Owncloud
+    isOfficial: false
+    description: ownCloud, your collaboration tool The most essential productivity tool since email Store. Share. Work.
