@@ -1,7 +1,7 @@
 ---
 captainVersion: 4
 services:
-  $$cap_appname-owncloud:
+  $$cap_appname:
     image: owncloud/server:$$cap_owncloud_version
     restart: always
     depends_on:
