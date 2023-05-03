@@ -43,7 +43,7 @@ caproverOneClickApp:
             More details: https://www.jbpm.org
         end: |-
             jBPM has been successfully deployed!
-    displayName: jBPM
-    isOfficial: false
-    description: jBPM is a toolkit for building business applications to help automate business processes and decisions
-    documentation: See https://www.jbpm.org/
+  displayName: jBPM
+  isOfficial: false
+  description: jBPM is a toolkit for building business applications to help automate business processes and decisions
+  documentation: See https://www.jbpm.org/
