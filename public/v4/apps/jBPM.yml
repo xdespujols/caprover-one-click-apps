@@ -10,18 +10,20 @@ services:
     volumes:
       - $$cap_wb_git_path:/opt/jboss/wildfly/bin/.niogit:Z
     environment:
-      - JBPM_DB_DRIVER: postgres
-      - JBPM_DB_HOST: srv-captain--$$cap_appname-postgres
+      JBPM_DB_DRIVER: postgres
+      JBPM_DB_HOST: srv-captain--$$cap_appname-postgres
     depends_on:
       - $$cap_appname-postgres
+    caproverExtra:
+      JcontainerHttpPort: 8080
   $$cap_appname-postgres:
     image: postgres:$$cap_postgres_version
     container_name: postgres
     restart: always
     environment:
-      - POSTGRES_USER: jbpm
-      - POSTGRES_PASSWORD: jbpm
-      - POSTGRES_DB: jbpm
+      POSTGRES_USER: jbpm
+      POSTGRES_PASSWORD: jbpm
+      POSTGRES_DB: jbpm
 
 caproverOneClickApp:
   variables:
