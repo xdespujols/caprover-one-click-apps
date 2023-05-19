@@ -8,7 +8,6 @@ services:
         privileged: true
         ports:
             - 8080:8080
-        entrypoint: ./fnserver
 caproverOneClickApp:
     instructions:
         start: This will deploy an instance of the Fn Project server.
